@@ -1,1 +1,1 @@
-# <H1>project name<H1>
+# <H2>project name<H2>
