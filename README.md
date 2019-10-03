@@ -1,4 +1,4 @@
-# <H2>Alkalmazások fejlesztése beadandó</H2>
+<H2>Alkalmazások fejlesztése beadandó</H2>
 <H3>Bevezető</H3>
 <p>Az alapötlet a neptun mintájára épülő, az egyetem szereplői számára adminisztrációs feladatok(tantárgyak felvétele/menedzselése tanároknak/diákoknak) kezelésére alkalmas program létrehozása.</p>
 <H3>Projektötlet</H3>
