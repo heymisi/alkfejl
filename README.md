@@ -52,3 +52,10 @@
   <li>E-mail: (ejtsd: ímél) elektronikus levél, a postához hasonló elektronikus üzenetkézbesítési szolgáltatás által továbbított üzenet</li>
   <li>Admin: egy adott rendszer felügyeletét ellátó, afelett általában teljes kontrollal rendelkező felhasználó, ill. az azt megszemélyesítő azonosító.</li>
 </ul>
+<H4>Szerepkörök</H4>
+<ul>
+  <li>Vendég: nem regisztrált látogató, aki csak a kezdőoldalt tudja megtekinteni, ahol csak regisztrációra/belépésre képes.</li>
+  <li>Diák: lásd funkcionális követelmények</li>
+  <li>Tanár: lásd funkcionális követelmények</li>
+  <li>Admin: lásd funkcionális követelmények</li>
+</ul>
