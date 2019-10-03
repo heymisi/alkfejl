@@ -1,6 +1,6 @@
 # <H2>Alkalmazások fejlesztése beadandó</H2>
 <H3>Bevezető</H3>
-<p>Az alapötlet egy diákok számára tantárgyak felvévésére és a tanárok számára a tárgyak menedzselésére alkalmas program.</p>
+<p>Az alapötlet a neptun mintájára épülő, az egyetem szereplői számára adminisztrációs feladatok(tantárgyak felvétele/menedzselése tanároknak/diákoknak) kezelésére alkalmas program létrehozása.</p>
 <H3>Projektötlet</H3>
 <H4>Funkcionális követelmények</H4>
 <ul>
