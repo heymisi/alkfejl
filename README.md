@@ -59,3 +59,37 @@
   <li>Tanár: lásd funkcionális követelmények</li>
   <li>Admin: lásd funkcionális követelmények</li>
 </ul>
+
+<H4>Entitások</H4>
+<ul>
+  <li>Felhasználó
+    <ul>
+      <li>Id (Long)</li>
+      <li>Név (String)</li>
+      <li>Jelszó (String)</li>
+      <li>Szerep (Enum)</li>
+      <li>Adatok (FelhasználóiAdatok)</li>
+      <li>Saját kurzusok (List&lt;Kurzus&gt;)</li>
+      <li>Teljesített kurzusok (List&lt;Kurzus&gt;)</li>
+      <li>Vizsgák (List&lt;Vizsgák&gt;)</li>
+    </ul>
+  </li>
+  <li>Kurzus</li>
+    <ul>
+        <li>Id (Long)</li>
+        <li>Név (String)</li>
+        <li>Adatok (KurzusAdatok)</li>
+        <li>Előfeltételek (List&lt;Kurzus&gt;)</li>
+        <li>Kurzusfelelős (Felhasználó)</li>
+        <li>Diákok (List&lt;Felhasználó&gt;)</li>
+    </ul>
+  <li>Vizsga</li>
+    <ul>
+        <li>Id (Long)</li>
+        <li>Név (String)</li>
+        <li>Adatok (VizsgaAdatok)</li>
+        <li>Vizsgafelelős (Felhasználó)</li>
+        <li>Diákok (List&lt;Felhasználó&gt;)</li>
+    </ul>
+</ul>
+
