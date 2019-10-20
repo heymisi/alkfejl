@@ -59,7 +59,17 @@
   <li>Tanár: lásd funkcionális követelmények</li>
   <li>Admin: lásd funkcionális követelmények</li>
 </ul>
+
 <H3>Tervezés</H3>
+
+<H4>Felhasznált eszközök</H4>
+<ul>
+  <li>Github - verziókezelő</li>
+   <li>NetBeans - Java fordító program</li>
+  <li>Maven - verzió kezelő</li>
+  <li>Spring/Springboot - keretrenszer</li>
+
+  </ul>
 <H4>Entitások</H4>
 <ul>
   <li>Student
