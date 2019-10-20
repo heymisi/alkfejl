@@ -112,28 +112,28 @@
     <ul>
       <li>/courses: Kurzusok megjelenítése
          <ul>
-           <li>/:id: Adott id-hez tartozó kurzus megjelenítése</li>
+           <li>/:id : Adott id-hez tartozó kurzus megjelenítése</li>
            <li>/:id/students: Adott id-hez tartozó kurzus diákjainak megjelenítése</li>
            <li>/:id/teacher: Adott id-hez tartozó kurzus tanárának megjelenítése</li>
          </ul>
       </li>
       <li>/exams: Vizsgák megjelenítése
          <ul>
-           <li>/:id: Adott id-hez tartozó vizsga megjelenítése</li>
+           <li>/:id : Adott id-hez tartozó vizsga megjelenítése</li>
            <li>/:id/students: Adott id-hez tartozó vizsga diákjainak megjelenítése</li>
            <li>/:id/teacher: Adott id-hez tartozó vizsga tanárának megjelenítése</li>
          </ul>
       </li>
       <li>/teachers: Tanárok megjelenítése
          <ul>
-           <li>/:id: Adott id-hez tartozó tanár megjelenítése</li>
+           <li>/:id : Adott id-hez tartozó tanár megjelenítése</li>
            <li>/:id/courses: Adott id-hez tartozó tanár kurzusainak megjelenítése</li>
            <li>/:id/exams: Adott id-hez tartozó tanár vizsgáinak megjelenítése</li>
          </ul>
       </li>
       <li>/students: Diákok megjelenítése
          <ul>
-           <li>/:id: Adott id-hez tartozó diák megjelenítése</li>
+           <li>/:id : Adott id-hez tartozó diák megjelenítése</li>
            <li>/:id/courses: Adott id-hez tartozó diák kurzusainak megjelenítése</li>
            <li>/:id/exams: Adott id-hez tartozó diák vizsgáinak megjelenítése</li>
          </ul>
