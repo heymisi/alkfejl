@@ -106,7 +106,7 @@
   </li>
 </ul>
 <H4>UML Diagram</H4>
-
+<img src="url.png" alt="UML">
 <H4>Végpontok</H4>
 <ul>
   <li>GET/
