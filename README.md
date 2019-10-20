@@ -140,5 +140,64 @@
       </li>
     </ul>
   </li>
+  <li>POST/
+    <ul>
+      <li>/courses: Kurzus hozzáadása</li>
+      <li>/exams: Vizsga hozzáadása</li>
+      <li>/student: Diák hozzáadása</li>
+      <li>/teacher: Tanár hozzáadása</li>
+    </ul>
+  </li>
+  <li>PUT/
+    <ul>
+      <li>/courses/:id : Adott id-hez tartozó kurzus módosítása</li>
+      <li>/exams/:id : Adott id-hez tartozó vizsga módosítása</li>
+      <li>/student/:id : Adott id-hez tartozó diák módosítása</li>
+      <li>/teacher/:id : Adott id-hez tartozó tanár módosítása</li>
+    </ul>
+  </li>
+  <li>DELETE/
+    <ul>
+      <li>/courses/:id : Adott id-hez tartozó kurzus törlése</li>
+      <li>/exams/:id : Adott id-hez tartozó vizsga törlése</li>
+      <li>/student/:id : Adott id-hez tartozó diák törlése</li>
+      <li>/teacher/:id : Adott id-hez tartozó tanár törlése</li>
+    </ul>
+  </li>
 </ul>
 <H4>Könyvtárstruktúra</H4>
+<ul>
+  <li>controllers
+    <ul>
+      <li>CourseController.java</li>
+      <li>ExamController.java</li>
+      <li>StudentController.java</li>
+      <li>TeacherController.java</li>
+    </ul>
+  </li>
+  <li>entities
+    <ul>
+      <li>Course.java</li>
+      <li>Exam.java</li>
+      <li>Student.java</li>
+      <li>Teacher.java</li>
+    </ul>
+  </li>
+  <li>repositories
+    <ul>
+      <li>CourseRepository.java</li>
+      <li>ExamRepository.java</li>
+      <li>StudentRepository.java</li>
+      <li>TeacherRepository.java</li>
+    </ul>
+  </li>
+  <li>security
+    <ul>
+        <li>AuthenticatedUser.java</li>
+        <li>CustomBasicAuthenticationEntryPoint.java</li>
+        <li>MyUserDetailsService.java</li>
+        <li>WebSecurityConfig.java</li>
+    </ul>
+  </li>
+  <li>NeptunApplication.java</li>
+</ul>
