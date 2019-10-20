@@ -1,0 +1,17 @@
+D:\Egyetem\5.félév\Alkfejl\alkfejl_2019_1-master\src\main\java\hu\elte\issuetracker\controllers\ExamController.java
+D:\Egyetem\5.félév\Alkfejl\alkfejl_2019_1-master\src\main\java\hu\elte\issuetracker\repositories\ExamRepository.java
+D:\Egyetem\5.félév\Alkfejl\alkfejl_2019_1-master\src\main\java\hu\elte\issuetracker\controllers\CourseController.java
+D:\Egyetem\5.félév\Alkfejl\alkfejl_2019_1-master\src\main\java\hu\elte\issuetracker\repositories\CourseRepository.java
+D:\Egyetem\5.félév\Alkfejl\alkfejl_2019_1-master\src\main\java\hu\elte\issuetracker\entities\Teacher.java
+D:\Egyetem\5.félév\Alkfejl\alkfejl_2019_1-master\src\main\java\hu\elte\issuetracker\controllers\StudentController.java
+D:\Egyetem\5.félév\Alkfejl\alkfejl_2019_1-master\src\main\java\hu\elte\issuetracker\security\WebSecurityConfig.java
+D:\Egyetem\5.félév\Alkfejl\alkfejl_2019_1-master\src\main\java\hu\elte\issuetracker\controllers\TeacherController.java
+D:\Egyetem\5.félév\Alkfejl\alkfejl_2019_1-master\src\main\java\hu\elte\issuetracker\security\MyUserDetailsService.java
+D:\Egyetem\5.félév\Alkfejl\alkfejl_2019_1-master\src\main\java\hu\elte\issuetracker\entities\Exam.java
+D:\Egyetem\5.félév\Alkfejl\alkfejl_2019_1-master\src\main\java\hu\elte\issuetracker\NeptunApplication.java
+D:\Egyetem\5.félév\Alkfejl\alkfejl_2019_1-master\src\main\java\hu\elte\issuetracker\security\AuthenticatedUser.java
+D:\Egyetem\5.félév\Alkfejl\alkfejl_2019_1-master\src\main\java\hu\elte\issuetracker\entities\Student.java
+D:\Egyetem\5.félév\Alkfejl\alkfejl_2019_1-master\src\main\java\hu\elte\issuetracker\repositories\TeacherRepository.java
+D:\Egyetem\5.félév\Alkfejl\alkfejl_2019_1-master\src\main\java\hu\elte\issuetracker\entities\Course.java
+D:\Egyetem\5.félév\Alkfejl\alkfejl_2019_1-master\src\main\java\hu\elte\issuetracker\repositories\StudentRepository.java
+D:\Egyetem\5.félév\Alkfejl\alkfejl_2019_1-master\src\main\java\hu\elte\issuetracker\security\CustomBasicAuthenticationEntryPoint.java

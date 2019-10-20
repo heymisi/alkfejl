@@ -1,0 +1,13 @@
+hu\elte\alkfejlbead\controllers\CourseController.class
+hu\elte\alkfejlbead\controllers\ExamController.class
+hu\elte\alkfejlbead\repositories\TeacherRepository.class
+hu\elte\alkfejlbead\controllers\TeacherController.class
+hu\elte\alkfejlbead\entities\Teacher.class
+hu\elte\alkfejlbead\controllers\StudentController.class
+hu\elte\alkfejlbead\entities\Course.class
+hu\elte\alkfejlbead\NeptunApplication.class
+hu\elte\alkfejlbead\repositories\ExamRepository.class
+hu\elte\alkfejlbead\entities\Student.class
+hu\elte\alkfejlbead\repositories\StudentRepository.class
+hu\elte\alkfejlbead\entities\Exam.class
+hu\elte\alkfejlbead\repositories\CourseRepository.class
