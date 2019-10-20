@@ -62,34 +62,47 @@
 
 <H4>Entitások</H4>
 <ul>
-  <li>Felhasználó
+  <li>Student
     <ul>
       <li>Id (Long)</li>
-      <li>Név (String)</li>
-      <li>Jelszó (String)</li>
-      <li>Szerep (Enum)</li>
-      <li>Adatok (FelhasználóiAdatok)</li>
-      <li>Saját kurzusok (List&lt;Kurzus&gt;)</li>
-      <li>Teljesített kurzusok (List&lt;Kurzus&gt;)</li>
-      <li>Vizsgák (List&lt;Vizsgák&gt;)</li>
+      <li>NeptunCode (String)</li>
+      <li>Password (String)</li>
+      <li>Name (String)</li>
+      <li>Courses (List&lt;Course&gt;)</li>
+      <li>Exams (List&lt;Exam&gt;)</li>
     </ul>
   </li>
-  <li>Kurzus</li>
+  <li>Teacher
+    <ul>
+      <li>Id (Long)</li>
+      <li>NeptunCode (String)</li>
+      <li>Password (String)</li>
+      <li>Name (String)</li>
+      <li>Courses (List&lt;Course&gt;)</li>
+      <li>Exams (List&lt;Exam&gt;)</li>
+    </ul>
+  </li>
+  <li>Course
     <ul>
         <li>Id (Long)</li>
-        <li>Név (String)</li>
-        <li>Adatok (KurzusAdatok)</li>
-        <li>Előfeltételek (List&lt;Kurzus&gt;)</li>
-        <li>Kurzusfelelős (Felhasználó)</li>
-        <li>Diákok (List&lt;Felhasználó&gt;)</li>
+        <li>Name (String)</li>
+        <li>MaxLimit (Integer)</li>
+        <li>ClassRoom (String)</li>
+        <li>Date (String)</li>
+        <li>Teacher (Teacher)</li>
+        <li>Students (List&lt;Student&gt;)</li>
     </ul>
-  <li>Vizsga</li>
+  </li>
+  <li>Exam
     <ul>
         <li>Id (Long)</li>
-        <li>Név (String)</li>
-        <li>Adatok (VizsgaAdatok)</li>
-        <li>Vizsgafelelős (Felhasználó)</li>
-        <li>Diákok (List&lt;Felhasználó&gt;)</li>
+        <li>Name (String)</li>
+        <li>MaxLimit (Integer)</li>
+        <li>ClassRoom (String)</li>
+        <li>Date (String)</li>
+        <li>Teacher (Teacher)</li>
+        <li>Students (List&lt;Student&gt;)</li>
     </ul>
+  </li>
 </ul>
 
