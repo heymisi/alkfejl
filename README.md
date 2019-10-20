@@ -59,7 +59,7 @@
   <li>Tanár: lásd funkcionális követelmények</li>
   <li>Admin: lásd funkcionális követelmények</li>
 </ul>
-<H3>Projektötlet</H3>
+<H3>Tervezés</H3>
 <H4>Entitások</H4>
 <ul>
   <li>Student
