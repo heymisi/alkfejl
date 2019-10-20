@@ -105,6 +105,7 @@
     </ul>
   </li>
 </ul>
+<H4>UML Diagram</H4>
 
 <H4>Végpontok</H4>
 <ul>
