@@ -117,6 +117,10 @@
 </ul>
 <H4>UML Diagram</H4>
 <img src="uml.png" alt="UML">
+
+
+<H4>Szekvencia Diagram</H4>
+<img src="szekvencia-diagramm.PNG" alt="szekvencia">
 <H4>Végpontok</H4>
 <ul>
   <li>GET/
