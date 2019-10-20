@@ -10,6 +10,7 @@ import java.util.Objects;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -33,8 +34,8 @@ public class TeacherController {
     @Autowired
     private ExamRepository examRepository;
 
-//    @Autowired
-//    private BCryptPasswordEncoder passwordEncoder;
+    @Autowired
+    private BCryptPasswordEncoder passwordEncoder;
 
     @GetMapping("")
     public ResponseEntity<Iterable<Teacher>> getAll() {
@@ -181,7 +182,7 @@ public class TeacherController {
         if (oTeacher.isPresent()) {
             return ResponseEntity.badRequest().build();
         }
-//        teacher.setPassword(passwordEncoder.encode(teacher.getPassword()));
+        teacher.setPassword(passwordEncoder.encode(teacher.getPassword()));
         return ResponseEntity.ok(teacherRepository.save(teacher));
     }
 
