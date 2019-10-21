@@ -66,7 +66,7 @@
 <ul>
   <li>Github - verziókezelő</li>
    <li>NetBeans - Java fordító program</li>
-  <li>Maven - verzió kezelő</li>
+  <li>Maven - project management/függőségek kezelése</li>
   <li>Spring/Springboot - keretrenszer</li>
 
   </ul>
