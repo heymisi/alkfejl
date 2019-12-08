@@ -52,24 +52,15 @@
 
 <H3>Entitások</H3>
 <ul>
-  <li>Student
+  <li>User
     <ul>
-      <li>Id (Long)</li>
+      <li>Id (Integer)</li>
       <li>NeptunCode (String)</li>
-      <li>Password (String)</li>
       <li>Name (String)</li>
+      <li>Password (String)</li>
       <li>Courses (List&lt;Course&gt;)</li>
       <li>Exams (List&lt;Exam&gt;)</li>
-    </ul>
-  </li>
-  <li>Teacher
-    <ul>
-      <li>Id (Long)</li>
-      <li>NeptunCode (String)</li>
-      <li>Password (String)</li>
-      <li>Name (String)</li>
-      <li>Courses (List&lt;Course&gt;)</li>
-      <li>Exams (List&lt;Exam&gt;)</li>
+      <li>Role (Enum)</li>
     </ul>
   </li>
   <li>Course
@@ -77,9 +68,9 @@
         <li>Id (Long)</li>
         <li>Name (String)</li>
         <li>MaxLimit (Integer)</li>
-        <li>ClassRoom (String)</li>
+        <li>Room (Room)</li>
+        <li>RoomNumber (Integer)</li>
         <li>Date (String)</li>
-        <li>Teacher (Teacher)</li>
         <li>Students (List&lt;Student&gt;)</li>
     </ul>
   </li>
@@ -88,10 +79,20 @@
         <li>Id (Long)</li>
         <li>Name (String)</li>
         <li>MaxLimit (Integer)</li>
-        <li>ClassRoom (String)</li>
+        <li>Room (Room)</li>
+        <li>RoomNumber (Integer)</li>
         <li>Date (String)</li>
-        <li>Teacher (Teacher)</li>
         <li>Students (List&lt;Student&gt;)</li>
+    </ul>
+  </li>
+  <li>Room
+    <ul>
+      <li>Id (Long)</li>
+      <li>Name (String)</li>
+      <li>MaxLimit (Integer)</li>
+      <li>Occupied (Boolean)</li>
+      <li>Courses (List&lt;Course&gt;)</li>
+      <li>Exams (List&lt;Exam&gt;)</li>
     </ul>
   </li>
 </ul>
