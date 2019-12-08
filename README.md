@@ -118,18 +118,18 @@
            <li>/:id/teacher: Adott id-hez tartozó vizsga tanárának megjelenítése</li>
          </ul>
       </li>
-      <li>/teachers: Tanárok megjelenítése
+      <li>/users: Felhasználók megjelenítése
          <ul>
-           <li>/:id : Adott id-hez tartozó tanár megjelenítése</li>
-           <li>/:id/courses: Adott id-hez tartozó tanár kurzusainak megjelenítése</li>
-           <li>/:id/exams: Adott id-hez tartozó tanár vizsgáinak megjelenítése</li>
+           <li>/:id : Adott id-hez tartozó felhasználó megjelenítése</li>
+           <li>/:id/courses: Adott id-hez tartozó felhasználó kurzusainak megjelenítése</li>
+           <li>/:id/exams: Adott id-hez tartozó felhasználó vizsgáinak megjelenítése</li>
          </ul>
       </li>
-      <li>/students: Diákok megjelenítése
+      <li>/rooms: Termek megjelenítése
          <ul>
-           <li>/:id : Adott id-hez tartozó diák megjelenítése</li>
-           <li>/:id/courses: Adott id-hez tartozó diák kurzusainak megjelenítése</li>
-           <li>/:id/exams: Adott id-hez tartozó diák vizsgáinak megjelenítése</li>
+           <li>/:id : Adott id-hez tartozó terem megjelenítése</li>
+           <li>/:id/courses: Adott id-vel rendelkező teremhez tartozó kurzusok megjelenítése</li>
+           <li>/:id/exams: Adott id-vel rendelkező teremhez tartozó vizsgák megjelenítése</li>
          </ul>
       </li>
     </ul>
@@ -138,24 +138,24 @@
     <ul>
       <li>/courses: Kurzus hozzáadása</li>
       <li>/exams: Vizsga hozzáadása</li>
-      <li>/student: Diák hozzáadása</li>
-      <li>/teacher: Tanár hozzáadása</li>
+      <li>/users: Felhasználó hozzáadása</li>
+      <li>/rooms: Terem hozzáadása</li>
     </ul>
   </li>
   <li>PUT/
     <ul>
       <li>/courses/:id : Adott id-hez tartozó kurzus módosítása</li>
       <li>/exams/:id : Adott id-hez tartozó vizsga módosítása</li>
-      <li>/student/:id : Adott id-hez tartozó diák módosítása</li>
-      <li>/teacher/:id : Adott id-hez tartozó tanár módosítása</li>
+      <li>/users/:id : Adott id-hez tartozó felhasználó módosítása</li>
+      <li>/rooms/:id : Adott id-hez tartozó terem módosítása</li>
     </ul>
   </li>
   <li>DELETE/
     <ul>
       <li>/courses/:id : Adott id-hez tartozó kurzus törlése</li>
       <li>/exams/:id : Adott id-hez tartozó vizsga törlése</li>
-      <li>/student/:id : Adott id-hez tartozó diák törlése</li>
-      <li>/teacher/:id : Adott id-hez tartozó tanár törlése</li>
+      <li>/users/:id : Adott id-hez tartozó felhasználó törlése</li>
+      <li>/rooms/:id : Adott id-hez tartozó terem törlése</li>
     </ul>
   </li>
 </ul>
@@ -171,8 +171,7 @@
   <li>NetBeans - Java fordító program</li>
   <li>Maven - project management/függőségek kezelése</li>
   <li>Spring/Springboot - keretrendszer</li>
-
-  </ul>
+</ul>
 
 <H3>Könyvtárstruktúra</H3>
 <ul>
