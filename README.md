@@ -8,32 +8,16 @@
   <li>Bejelentkezés</li>
   <li>Bejelentkezett felhasználóknak
     <ul>
-      <li>Adminnak
-        <ul>
-          <li>Kurzus hozzáadása/módosítása/törlése</li>
-          <li>Vizsga hozzáadása/módosítása/törlése</li>
-          <li>Tanári jog adása/elvétele</li>          
-          <li>Felhasználók kilistázása/törlése</li>
-        </ul>
-      </li>
       <li>Tanárnak</li>
         <ul>
-          <li>Saját kurzusok módosítása/törlése/megjelenítése órarendben</li> 
-          <li>Saját vizsgák módosítása/törlése/megjelenítése órarendben</li> 
-          <li>Diák törlése saját kurzusról/vizsgáról</li>
-          <li>Saját kurzushoz/vizsgához tartozó diák számára jegy adása</li>
+          <li>Saját kurzusok törlése/megjelenítése órarendben</li> 
+          <li>Saját vizsgák törlése/megjelenítése órarendben</li> 
+          <li>Kurzusok/Vizsgák kilistázása</li>
         </ul>
       <li>Diáknak</li>
         <ul>
           <li>Kurzus felvétele/leadása</li>
           <li>Vizsga felvétele/leadása</li>
-          <li>Felvett kurzusok részletes kilistázása, megjelenítése órarendben</li>
-        </ul>
-      <li>Általánosan</li>
-        <ul>
-          <li>Saját adatok megjelenítése/módosítása</li>
-          <li>E-mail küldése</li>
-          <li>E-mailek kilistázása</li>
           <li>Kurzusok/Vizsgák kilistázása</li>
         </ul>
     </ul>
@@ -47,17 +31,16 @@
 </ul>
 <H4>Szakterületi fogalomjegyzék</H4>
 <ul>
-  <li>Kurzus: az a keret, amelyben a hallgatók meghatározott rend (előadás, gyakorlat, házi feladat, stb.) szerint gyarapítják tudásukat, és arról számot is adnak.</li>
-  <li>Vizsga: tudás számonkérése arról, hogy egy tanuló a kurzus során megtanult anyagot mennyire értette meg, és hogyan tudja alkalmazni. </li>
+  <li>Kurzus: Az a keret, amelyben a hallgatók meghatározott rend (előadás, gyakorlat, házi feladat, stb.) szerint gyarapítják tudásukat, és arról számot is adnak.</li>
+  <li>Vizsga: Tudás számonkérése arról, hogy egy tanuló a kurzus során megtanult anyagot mennyire értette meg, és hogyan tudja alkalmazni. </li>
   <li>E-mail: (ejtsd: ímél) elektronikus levél, a postához hasonló elektronikus üzenetkézbesítési szolgáltatás által továbbított üzenet</li>
-  <li>Admin: egy adott rendszer felügyeletét ellátó, afelett általában teljes kontrollal rendelkező felhasználó, ill. az azt megszemélyesítő azonosító.</li>
+  <li>Admin: Egy adott rendszer felügyeletét ellátó, afelett általában teljes kontrollal rendelkező felhasználó, ill. az azt megszemélyesítő azonosító.</li>
 </ul>
 <H4>Szerepkörök</H4>
 <ul>
   <li>Vendég: nem regisztrált látogató, aki csak a kezdőoldalt tudja megtekinteni, ahol csak regisztrációra/belépésre képes.</li>
   <li>Diák: lásd funkcionális követelmények</li>
   <li>Tanár: lásd funkcionális követelmények</li>
-  <li>Admin: lásd funkcionális követelmények</li>
 </ul>
 
 <H3>Tervezés</H3>
@@ -65,9 +48,9 @@
 <H4>Felhasznált eszközök</H4>
 <ul>
   <li>Github - verziókezelő</li>
-   <li>NetBeans - Java fordító program</li>
+  <li>NetBeans - Java fordító program</li>
   <li>Maven - project management/függőségek kezelése</li>
-  <li>Spring/Springboot - keretrenszer</li>
+  <li>Spring/Springboot - keretrendszer</li>
 
   </ul>
 <H4>Entitások</H4>
@@ -115,12 +98,14 @@
     </ul>
   </li>
 </ul>
+
 <H4>UML Diagram</H4>
 <img src="uml.png" alt="UML">
 
 
 <H4>Szekvencia Diagram</H4>
 <img src="szekvencia-diagramm.PNG" alt="szekvencia">
+
 <H4>Végpontok</H4>
 <ul>
   <li>GET/
