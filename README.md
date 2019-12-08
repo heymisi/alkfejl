@@ -171,6 +171,8 @@
   <li>NetBeans - Java fordító program</li>
   <li>Maven - project management/függőségek kezelése</li>
   <li>Spring/Springboot - keretrendszer</li>
+  <li>Visual Studio Code - Lokális IDE </li>
+  <li>Node.js - Javascript környezet</li>
 </ul>
 
 <H3>Könyvtárstruktúra</H3>
@@ -179,24 +181,24 @@
     <ul>
       <li>CourseController.java</li>
       <li>ExamController.java</li>
-      <li>StudentController.java</li>
-      <li>TeacherController.java</li>
+      <li>UserController.java</li>
+      <li>RoomController.java</li>
     </ul>
   </li>
   <li>entities
     <ul>
       <li>Course.java</li>
       <li>Exam.java</li>
-      <li>Student.java</li>
-      <li>Teacher.java</li>
+      <li>User.java</li>
+      <li>Room.java</li>
     </ul>
   </li>
   <li>repositories
     <ul>
       <li>CourseRepository.java</li>
       <li>ExamRepository.java</li>
-      <li>StudentRepository.java</li>
-      <li>TeacherRepository.java</li>
+      <li>UserRepository.java</li>
+      <li>RoomRepository.java</li>
     </ul>
   </li>
   <li>security
