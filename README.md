@@ -176,6 +176,7 @@
 </ul>
 
 <H3>Könyvtárstruktúra</H3>
+<H4>Backend</H4>
 <ul>
   <li>controllers
     <ul>
@@ -210,6 +211,126 @@
     </ul>
   </li>
   <li>NeptunApplication.java</li>
+</ul>
+
+<H4>Frontend</H4>
+<ul>
+  <li>app
+    <ul>
+      <li>app-routing.module.ts</li>
+      <li>app.component.css</li>
+      <li>app.component.html</li>
+      <li>app.component.ts</li>
+      <li>app.component.spec.ts</li>
+      <li>app.module.ts</li>
+    </ul>
+  </li>
+  <li>auth
+    <ul>
+      <li>auth.guard.spec.ts</li>
+      <li>auth.guard.ts</li>
+      <li>auth.service.spec.ts</li>
+      <li>auth.service.ts</li>
+    </ul>
+  </li>
+  <li>register
+    <ul>
+      <li>register-form.ts</li>
+      <li>register-form.html</li>
+      <li>register-form.css</li>
+      <li>register-form.spec.ts</li>
+    </ul>
+  </li>
+  <li>login
+    <ul>
+      <li>login-form.ts</li>
+      <li>login-form.html</li>
+      <li>login-form.css</li>
+      <li>login-form.spec.ts</li>
+    </ul>
+  </li>
+  <li>user
+    <ul>
+      <li>user.spec.ts</li>
+      <li>user.ts</li>
+    </ul>
+  </li>
+  <li>course
+    <ul>
+      <li>course.service.spec.ts</li>
+      <li>course.service.ts</li>
+      <li>course.spec.ts</li>
+      <li>course.ts</li>
+      <li>add-course.ts</li>
+      <li>add-course.html</li>
+      <li>add-course.css</li>
+      <li>add-course.spec.ts</li>
+      <li>course-form.ts</li>
+      <li>course-form.html</li>
+      <li>course-form.css</li>
+      <li>course-form.spec.ts</li>
+      <li>my-courses.ts</li>
+      <li>my-courses.html</li>
+      <li>my-courses.css</li>
+      <li>my-courses.spec.ts</li>
+    </ul>
+  </li>
+  <li>exam
+    <ul>
+      <li>exam.service.spec.ts</li>
+      <li>exam.service.ts</li>
+      <li>exam.spec.ts</li>
+      <li>exam.ts</li>
+      <li>add-exam.ts</li>
+      <li>add-exam.html</li>
+      <li>add-exam.css</li>
+      <li>add-exam.spec.ts</li>
+      <li>exam-form.ts</li>
+      <li>exam-form.html</li>
+      <li>exam-form.css</li>
+      <li>exam-form.spec.ts</li>
+      <li>my-exams.ts</li>
+      <li>my-exams.html</li>
+      <li>my-exams.css</li>
+      <li>my-exams.spec.ts</li>
+    </ul>
+  </li>
+  <li>room
+    <ul>
+      <li>room.service.spec.ts</li>
+      <li>room.service.ts</li>
+      <li>room.spec.ts</li>
+      <li>room.ts</li>
+      <li>add-room.ts</li>
+      <li>add-room.html</li>
+      <li>add-room.css</li>
+      <li>add-room.spec.ts</li>
+      <li>exam-room.ts</li>
+      <li>exam-room.html</li>
+      <li>exam-room.css</li>
+      <li>exam-room.spec.ts</li>
+      <li>my-rooms.ts</li>
+      <li>my-rooms.html</li>
+      <li>my-rooms.css</li>
+      <li>my-rooms.spec.ts</li>
+    </ul>
+  </li>
+  <li>status-filter
+    <ul>
+      <li>status-filter.ts</li>
+      <li>status-filter.html</li>
+      <li>status-filter.css</li>
+      <li>status-filter.spec.ts</li>
+    </ul>
+  </li>
+  <li>routing
+    <ul>
+      <li>routing.ts</li>
+      <li>routing.html</li>
+      <li>routing.css</li>
+      <li>routing.spec.ts</li>
+    </ul>
+  </li>
 </ul>
 
 <H2>Felhasználói dokumentáció</H2>
