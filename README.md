@@ -1,8 +1,8 @@
-<H2>Alkalmazások fejlesztése beadandó</H2>
+<H1>Alkalmazások fejlesztése beadandó</H1>
 <H3>Bevezető</H3>
 <p>Az alapötlet a neptun mintájára épülő, az egyetem szereplői számára adminisztrációs feladatok(tantárgyak felvétele/menedzselése tanároknak/diákoknak) kezelésére alkalmas program létrehozása.</p>
-<H3>Követelményanalízis</H3>
-<H4>Funkcionális követelmények</H4>
+<H2>Követelményanalízis</H2>
+<H3>Funkcionális követelmények</H3>
 <ul>
   <li>Regisztráció</li>
   <li>Bejelentkezés</li>
@@ -23,21 +23,21 @@
     </ul>
   </li>
 </ul>
-<H4>Nem funkcionális követelmények</H4>
+<H3>Nem funkcionális követelmények</H3>
 <ul>
   <li>Felhasználóbarát: Megfelelően elhatárolt funkciók. Világos látható színekkel írt betűk. Ésszerű elrendezés.</li>
   <li>Biztonság: Jelszóval védett funkciók. A jelszavak titkosítottak. A különböző űrlapoknál egy hibalistában kijelzi a program a hibákat.</li>
   <li>Gyors működés: Adatbázisban operáló program, gyors kereséssekkel hamar előállítja a kívánt eredményeket.</li>
 </ul>
-<H4>Szakterületi fogalomjegyzék</H4>
+<H3>Szakterületi fogalomjegyzék</H3>
 <ul>
   <li>Kurzus: Az a keret, amelyben a hallgatók meghatározott rend (előadás, gyakorlat, házi feladat, stb.) szerint gyarapítják tudásukat, és arról számot is adnak.</li>
   <li>Vizsga: Tudás számonkérése arról, hogy egy tanuló a kurzus során megtanult anyagot mennyire értette meg, és hogyan tudja alkalmazni. </li>
 </ul>
 
-<H3>Tervezés</H3>
+<H2>Tervezés</H2>
 
-<H4>Szerepkörök</H4>
+<H3>Szerepkörök</H3>
 <ul>
   <li>Vendég: nem regisztrált látogató, aki csak a kezdőoldalt tudja megtekinteni, ahol csak regisztrációra/belépésre képes.</li>
   <li>Diák: lásd funkcionális követelmények</li>
@@ -45,7 +45,7 @@
 </ul>
 
 
-<H4>Entitások</H4>
+<H3>Entitások</H3>
 <ul>
   <li>Student
     <ul>
@@ -91,7 +91,7 @@
   </li>
 </ul>
 
-<H4>Végpontok</H4>
+<H3>Végpontok</H3>
 <ul>
   <li>GET/
     <ul>
@@ -151,16 +151,16 @@
   </li>
 </ul>
 
-<H4>UML Diagram</H4>
+<H3>UML Diagram</H3>
 <img src="uml.png" alt="UML">
 
 
-<H4>Szekvencia Diagram</H4>
+<H3>Szekvencia diagram</H3>
 <img src="szekvencia-diagramm.PNG" alt="szekvencia">
 
-<H3>Implementáció</H3>
+<H2>Implementáció</H2>
 
-<H4>Felhasznált eszközök</H4>
+<H3>Felhasznált eszközök</H3>
 <ul>
   <li>Github - verziókezelő</li>
   <li>NetBeans - Java fordító program</li>
@@ -169,7 +169,7 @@
 
   </ul>
 
-<H4>Könyvtárstruktúra</H4>
+<H3>Könyvtárstruktúra</H3>
 <ul>
   <li>controllers
     <ul>
@@ -206,14 +206,14 @@
   <li>NeptunApplication.java</li>
 </ul>
 
-<H3>Felhasználói dokumentáció</H3>
-<H4>Telepítés</H4>
-<H5>A telepítéshez szükséges:</H5>
+<H2>Felhasználói dokumentáció</H2>
+<H3>Telepítés</H3>
+<H4>A telepítéshez szükséges:</H4>
 <ul>
     <li>NodeJS és npm, ami innen letölthető: <a href="https://www.npmjs.com/get-npm/">npmjs.com/get-npm</a></li>
     <li>Internet elérés</li>
 </ul>
-<H5>Teleptés:</H5>
+<H4>Teleptés:</H4>
 <ol>
   <li>Látogasson el a <a href="https://github.com/heymisi/alkfejl/">github.com/heymisi/alkfejl</a> oldalra.</li>
   <li>Itt kattintson a <b>"Clone and Download"</b> gombra, és azon belül kattintson a <b>"Download as Zip"</b> gombra.</li>
@@ -221,7 +221,7 @@
   <li><b>npm i</b> parancsot adjuk ki parancssorban a kicsomagolt állomány mappájában.</li>
   <li><b>npm start</b>-al elindíthatjuk a programot.</li>
 </ol>
-<H4>Használata</H4>
+<H3>Használata</H3>
 <ol>
   <li>Böngészőben a keresősávba írjuk be, hogy: <b>localhost:8080</b></li>
   <li>Regisztrálás és bejelentkezés után használhatjuk a programot.</li>
