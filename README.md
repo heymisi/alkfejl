@@ -35,6 +35,12 @@
   <li>Vizsga: Tudás számonkérése arról, hogy egy tanuló a kurzus során megtanult anyagot mennyire értette meg, és hogyan tudja alkalmazni. </li>
 </ul>
 
+<H3>Használati eset diagram</H3>
+<img src="usecase.png" alt="Usecase">
+
+<H3>Kurzuslétrehozás menete</H3>
+<img src="folyamat.png" alt="Folyamat">
+
 <H2>Tervezés</H2>
 
 <H3>Szerepkörök</H3>
@@ -43,7 +49,6 @@
   <li>Diák: lásd funkcionális követelmények</li>
   <li>Tanár: lásd funkcionális követelmények</li>
 </ul>
-
 
 <H3>Entitások</H3>
 <ul>
@@ -153,9 +158,6 @@
     </ul>
   </li>
 </ul>
-
-<H3>Használati eset diagram</H3>
-<img src="usecase.png" alt="Usecase">
 
 <H3>Szekvencia diagram</H3>
 <img src="szekvencia-diagramm.PNG" alt="szekvencia">
