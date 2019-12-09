@@ -1,0 +1,74 @@
+<form (submit)="submit(examForm)" #examForm="ngForm">
+        <div class="form-group">
+          <!-- <small id="locationHelp" class="form-text text-muted">Give the location of the issue (e.g. labor)</small> -->
+          <mat-form-field appearance="outline">
+            <input
+              matInput
+              type="text"
+              name="title"
+              [(ngModel)]="model.name"
+              aria-describedby="titleHelp"
+              placeholder="Írd be a vizsga nevet!"
+              required
+              #title="ngModel"
+            />
+            <mat-label>Vizsga neve</mat-label>
+
+          </mat-form-field>
+          <mat-error
+            *ngIf="
+              title.invalid && (title.dirty || title.touched) && title.errors.required
+            "
+          >
+            A Vizsga neve kötelező!
+          </mat-error>
+        </div>
+      
+        <div class="form-group">
+          <mat-form-field appearance="outline">
+            <input
+              matInput
+              type="number"
+              name="maxlimit"
+              [(ngModel)]="model.maxLimit"
+              placeholder="Mennyi a férőhely?"
+              required
+              pattern="\d+"
+            />
+            <mat-label>Férőhely</mat-label>
+
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+                <mat-form-field  appearance="outline">
+                        <mat-select placeholder="Válassz termet!"#roomValue  (selectionChange)="change($event.value)">
+                                <mat-option *ngFor="let room of rooms" [value]="room.id">{{ room.name }}</mat-option>                        </mat-select>
+                      </mat-form-field>
+        </div>
+        <div class="form-group">
+          <!-- <small id="descriptionHelp" class="form-text text-muted">The error details</small> -->
+          <mat-form-field appearance="outline">
+            <input
+              matInput
+              name="date"
+              [(ngModel)]="model.date"
+              aria-describedby="dateHelp"
+              placeholder="Adj meg időpontot!"
+              required
+            />
+            <mat-label>Időpont</mat-label>
+
+          </mat-form-field>
+
+        </div>
+      
+        <button
+          mat-raised-button
+          [disabled]="!examForm.valid"
+          type="submit"
+          color="primary"
+        >
+          Vizsga hozzáadása
+        </button>
+      </form>
+      

@@ -1,0 +1,60 @@
+<div class="row">
+    <div class="col">
+        <span style="text-align: center; "> 
+
+      <h1 class="display-2">Termek</h1>
+      <div *ngIf ="rooms.length === 0 ; else elseBlock"> <h3>Jelenleg nincs egyetlen terem sem a renszerben!</h3>
+      </div>
+    </span>
+
+      <ng-template #elseBlock>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <!-- <th scope="col">#</th> -->
+            <th scope="col">Név</th>
+            <th scope="col">Létszám</th>
+            <th scope="col">Foglalt</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor="let room of filteredRooms"
+            (click)="onSelectRoom(room)"
+            [class.table-info]="room === selectedRoom"
+          >
+            <!-- <th scope="row">{{ course.id }}</th> -->
+            <td>{{ room.name }} </td>    
+            <td>{{ room.maxLimit }}</td>
+            <td>{{ room.occupied }}</td>
+            <td>
+              <button
+                mat-raised-button
+                color="primary"
+                (click)="onDeleteClick(room)"
+              >
+                Terem törlése
+                <mat-icon>delete_sweep</mat-icon>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </ng-template>
+    </div>
+  </div>
+  
+
+  <span style="display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  padding: 100px 0;
+  text-align:center ;">
+  <button mat-raised-button color="primary" (click)="onNewClick()">Új terem hozzáadás</button>
+  <div class="col" *ngIf="selectedRoom">
+      <room-form [room]="selectedRoom" (onSubmit)="onFormSubmit($event)"></room-form>
+    </div>
+    </span>
+  

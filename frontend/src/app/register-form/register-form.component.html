@@ -1,0 +1,62 @@
+<div class="form-style">
+        <form [formGroup]="form" (ngSubmit)="onSubmit($event)">
+         
+                <span style="display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 25%;
+                padding: 100px 0;
+                text-align:center ;">
+        <h3>REGISZTRÁCIÓ</h3>
+
+          <mat-form-field appearance="outline">
+            <input
+              matInput
+              placeholder="Szaturn kód"
+              formControlName="neptunCode"
+              required
+            />
+            <mat-error *ngIf="name.invalid">Szaturn kód megadása kötelező</mat-error>
+            <mat-label>Szaturn kód</mat-label>
+
+          </mat-form-field >
+          <br />
+          <mat-form-field appearance="outline">
+            <input matInput placeholder="Név" formControlName="name" required />
+            <mat-error *ngIf="name.invalid">Név megadasa kotelezo</mat-error>
+            <mat-label>Név</mat-label>
+
+          </mat-form-field>
+          <br />
+          <mat-form-field appearance="outline">
+            <input
+              matInput
+              placeholder="Password"
+              formControlName="password"
+              required
+              [type]="hidePassword ? 'password' : 'text'"
+            />
+            <mat-icon matSuffix (click)="hidePassword = !hidePassword"></mat-icon>
+            <mat-error *ngIf="password.invalid">Jelszó megadása kötelező</mat-error>
+            <mat-label>Jelszó</mat-label>
+
+          </mat-form-field>
+      
+          <div>
+            <button
+              mat-flat-button
+              type="submit"
+              color="primary"
+              [disabled]="form.invalid"
+            >
+              Regisztráció
+              <mat-icon>how_to_reg</mat-icon>
+            </button>
+          </div>
+          <div *ngIf="message">
+            {{ message }}
+          </div>
+          </span>
+        </form>
+      </div>
+      

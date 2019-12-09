@@ -1,0 +1,53 @@
+<form (submit)="submit(roomForm)" #roomForm="ngForm">
+        <div class="form-group">
+          <!-- <small id="locationHelp" class="form-text text-muted">Give the location of the issue (e.g. labor)</small> -->
+          <mat-form-field appearance="outline">
+            <input
+              matInput
+              type="text"
+              name="title"
+              [(ngModel)]="model.name"
+              aria-describedby="titleHelp"
+              placeholder="Írd be a terem nevét!"
+              required
+              #title="ngModel"
+            />
+            <mat-label>Terem neve</mat-label>
+
+          </mat-form-field>
+          <mat-error
+            *ngIf="
+              title.invalid && (title.dirty || title.touched) && title.errors.required
+            "
+          >
+            A Terem neve kötelező!
+          </mat-error>
+        </div>
+      
+        <div class="form-group">
+          <mat-form-field appearance="outline">
+            <input
+              matInput
+              type="number"
+              name="maxlimit"
+              [(ngModel)]="model.maxLimit"
+              placeholder="Mennyi a férőhely?"
+              required
+              pattern="\d+"
+            />
+            <mat-label>Férőhely</mat-label>
+
+          </mat-form-field>
+        </div>
+      
+          
+        <button
+          mat-raised-button
+          [disabled]="!roomForm.valid"
+          type="submit"
+          color="primary"
+        >
+          Terem hozzáadása
+        </button>
+      </form>
+      

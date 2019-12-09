@@ -1,0 +1,67 @@
+<div class="row">
+    <div class="col">
+        <span style="text-align: center; "> <h1>Vizsgáim</h1 > 
+          <div *ngIf ="exams.length === 0 ; else elseBlock"> <h3>Jelenleg nincs vizsgád!</h3>
+          </div>
+        </span>
+        <ng-template #elseBlock>
+
+            <table class="table">
+        <thead>
+          <tr>
+            <!-- <th scope="col">#</th> -->
+            <th scope="col">Név</th>
+            <th scope="col">Létszám</th>
+            <th scope="col">Terem</th>
+            <th scope="col">Időpont</th>
+             <!-- <th scope="col">Diákok</th>-->
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor="let exam of filteredExams"
+            [class.table-info]="exam === selectedExam"
+          >
+            <!-- <th scope="row">{{ course.id }}</th> -->
+            <td><i>{{ exam.name }}</i></td>
+            <td><i>{{ exam.maxLimit }}</i></td>
+            <td><i>{{ exam.room.name}}</i></td>
+            <td><i>{{ exam.date }}</i></td>
+            <!--<td>{{ course.students }}</td>-->
+            <div *ngIf =" user.type === 'STUDENT'; else elseBlock">
+            <td>
+              <button mat-raised-button color="primary" (click)="onDeleteClick(exam)"> 
+                Vizsga leadása<mat-icon>delete_sweep</mat-icon></button>
+            </td>
+            </div>
+            <ng-template #elseBlock>
+                <td>
+                    <button mat-raised-button color="primary" (click)="onDeleteClickforTeacher(exam)"> 
+                      Vizsga törlése<mat-icon>delete_sweep</mat-icon></button>
+                  </td>
+                </ng-template>
+          </tr>
+        </tbody>
+      </table>
+      <status-filter
+        [status]="selectedStatus"
+        (onChange)="onFilterChange($event)"
+      ></status-filter>  
+    </ng-template>
+
+    </div>
+  </div>
+  <div *ngIf = "user.type === 'TEACHER'">
+
+  <span style="display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  padding: 100px 0;
+  text-align:center ;">
+  <button mat-raised-button color="primary" (click)="onNewClick()">Vizsga hozzáadás</button>
+  <div class="col" *ngIf="selectedExam">
+      <exam-form [exam]="selectedExam" (onSubmit)="onFormSubmit($event)"></exam-form>
+    </div>
+    </span>
+    </div>

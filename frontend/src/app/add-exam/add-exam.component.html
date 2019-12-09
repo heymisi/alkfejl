@@ -1,0 +1,40 @@
+<div class="row">
+        <div class="col">
+            <span style="text-align: center; "> <h1>Vizsga felvétele</h1 > </span>
+                <table class="table">
+            <thead>
+              <tr>
+                <!-- <th scope="col">#</th> -->
+                <th scope="col">Név</th>
+                <th scope="col">Létszám</th>
+                <th scope="col">Terem</th>
+                <th scope="col">Időpont</th>
+                 <!-- <th scope="col">Diákok</th>-->
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                *ngFor="let exam of filteredExams"
+                (click)="onSelectExam(exam)"
+                [class.table-info]="exam === selectedExam"
+              >
+                <!-- <th scope="row">{{ course.id }}</th> -->
+                <td><i>{{ exam.name }}</i></td>
+                <td><i>{{ exam.maxLimit }}</i></td>
+                <td><i>{{ exam.room.name }}</i></td>
+                <td><i>{{ exam.date }}</i></td>
+                <!--<td>{{ course.students }}</td>-->
+                <td>
+                    <button mat-raised-button color="primary" (click)="onFormSubmit(exam)"> 
+                      Vizsga felvét<mat-icon>add_circle</mat-icon></button>
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+          <status-filter
+            [status]="selectedStatus"
+            (onChange)="onFilterChange($event)"
+          ></status-filter>  
+        </div>
+      </div>
+    

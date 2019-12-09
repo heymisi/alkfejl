@@ -1,0 +1,17 @@
+
+  <span style="display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  text-align: center;
+  ">
+<p>Válassz egy a napot!</p>
+<mat-button-toggle-group (change)="onFilterChange(group.value)" [value]="selectedStatus" #group="matButtonToggleGroup">
+  <mat-button-toggle value="">
+    Mind
+  </mat-button-toggle>
+  <mat-button-toggle value="{{status}}"  *ngFor="let status of statuses">
+    {{ status }}
+  </mat-button-toggle>
+</mat-button-toggle-group>
+</span>
